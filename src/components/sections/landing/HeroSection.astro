@@ -40,10 +40,11 @@ interface Props {
 }
 ---
 <!-- Relative container for video and overlay content -->
-<div class="relative w-full h-full">
+<div class="realtive inset-0 w-screen h-screen overflow-hidden">
   <!-- Video Background -->
   <video
-    class="h-full w-full scale-110 object-cover object-center"
+    
+    class="absolute top-[-50px] left-0 min-h-full min-w-full object-cover"    
     draggable="false"
     autoplay
     loop
