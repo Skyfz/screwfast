@@ -30,6 +30,127 @@ const avatarSrcs: Array<string> = [
 <MainLayout>
   <AnnouncementBanner
     btnId="dismiss-button"
+    btnTitle="Join the Banking Revolution"
+    url="https://pointbank.com"
+  />
+
+  <HeroSection
+    title=`<span class="text-blue-500 dark:text-blue-400">Redefining Modern Banking`
+    subTitle="Welcome to Point Bank, where innovation meets excellence. We are here to solve the old banking issues like slow transactions and complex processes, bringing you fast, reliable, and intuitive banking."
+    primaryBtn="Get Started"
+    primaryBtnURL="/signup"
+    secondaryBtn="Contact Us"
+    secondaryBtnURL="/contact"
+    withReview={true}
+    avatars={avatarSrcs}
+    rating=`<span class="font-bold">4.9</span> / 5`
+    starCount={5}
+    reviews=`From Over <span class="font-bold">50k</span> Reviews`
+    src={heroImage}
+    alt="Point Bank - A modern solution for all your banking needs"
+  />
+
+  <ClientsSection
+    title="Trusted by Visionary Leaders"
+    subTitle="From industry pioneers to local businesses, Point Bank is the chosen partner for seamless financial solutions."
+  />
+
+  <FeaturesGeneral
+    title="Solving the Issues of Traditional Banking"
+    subTitle="Point Bank is here to address the frustrations of slow transactions, lack of transparency, and outdated systems. We are setting a new standard by offering lightning-fast services, enhanced security, and effortless account management—all designed to put you first."
+    src={featureImage}
+    alt="Point Bank features innovative solutions"
+    features={features}
+  />
+
+  <FeaturesNavs
+    title=`Customizing <span class="text-blue-500 dark:text-blue-400">Point Bank</span> for Your Financial Success.`
+    tabs={[
+      {
+        heading: "Speed and Efficiency",
+        content:
+          "Experience the fastest transaction times in the industry. With Point Bank, say goodbye to long waiting times and inefficiencies that plague traditional banks.",
+        svg: "tools",
+        src: tools,
+        alt: "Fast financial transactions",
+        first: true,
+      },
+      {
+        heading: "Intuitive User Experience",
+        content:
+          "Point Bank’s interface is built for simplicity and ease of use. Whether you’re managing personal finances or handling business accounts, our platform gives you the control you need with zero hassle.",
+        svg: "dashboard",
+        src: dashboard,
+        alt: "A user-friendly financial dashboard",
+        second: true,
+      },
+      {
+        heading: "Advanced Security",
+        content:
+          "We prioritize your security. Point Bank’s state-of-the-art encryption and security features ensure that your money and personal data are always safe.",
+        svg: "house",
+        src: construction,
+        alt: "Advanced financial security measures",
+      },
+    ]}
+  />
+
+  <TestimonialsSection
+    title="Banking, Reimagined"
+    subTitle="Point Bank is trusted by clients globally for our speed, transparency, and superior user experience. Join the new era of banking today."
+    testimonials={[
+      {
+        content:
+          "Point Bank has completely changed our banking experience. Transactions are lightning fast, and their support is unmatched. We couldn't be happier with the switch!",
+        author: "James Thompson",
+        role: "CEO | FutureTech Inc.",
+        avatarSrc:
+          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+      },
+    ]}
+    statistics={[
+      {
+        count: "1M+",
+        description: "accounts opened with Point Bank",
+      },
+      {
+        count: "50%",
+        description: "faster transaction processing time compared to traditional banks",
+      },
+      {
+        count: "99.9%",
+        description: "customer satisfaction rate",
+      },
+      {
+        count: "24/7",
+        description: "customer support available for all banking needs",
+      },
+    ]}
+  />
+
+  <PricingSection
+    title="Simple and Transparent Pricing"
+    subTitle="No hidden fees. No surprises. Point Bank offers a straightforward pricing structure that adapts to your financial needs."
+    pricing={pricing}
+  />
+
+  <FAQ title="Frequently<br />Asked Questions" faqs={faqs} />
+
+  <HeroSectionAlt
+    title="Join the Revolution"
+    subTitle="Point Bank is built on cutting-edge technology with your needs in mind. Experience the future of banking today."
+    url="https://pointbank.com/signup"
+  />
+</MainLayout>
+
+
+
+
+
+<!-- TEMPALTE -->
+<!-- <MainLayout>
+  <AnnouncementBanner
+    btnId="dismiss-button"
     btnTitle="Explore ScrewFast on GitHub"
     url="https://github.com/mearashadowfax/ScrewFast"
   />
@@ -142,4 +263,5 @@ const avatarSrcs: Array<string> = [
     subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
     url="https://github.com/mearashadowfax/ScrewFast"
   />
-</MainLayout>
+</MainLayout> -->
+
