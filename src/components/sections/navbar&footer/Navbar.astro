@@ -100,6 +100,60 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
     </div>
   </nav>
 </header>
+
+
+<style>
+  /* Initial transparent style */
+  .header-transparent {
+    background: transparent;
+    border-color: transparent;
+    transition: background 1.8s, backdrop-filter 1.5s;
+    backdrop-filter: blur(10px); /* Adjust this to your preference */
+  }
+  
+  .dark .header-transparent-d {
+    background: transparent;
+    border-color: transparent;
+    backdrop-filter: blur(0); /* Adjust this to your preference */
+    transition: background 0.3s, backdrop-filter 0.3s;
+  }
+  /* Style for when scrolled */
+  .header-scrolled {
+    /* background: rgba(255, 255, 255, 0.6); Adjust this to match your colors */
+    /* backdrop-filter: blur(10px); Adjust this to your preference */
+    transition: background 0.3s, backdrop-filter 0.3s;
+  }
+  </style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('nav');
+    const html = document.querySelector('html');
+
+    if (!header || !html) return; // Early return if either is null
+
+    let lastScrollTop = 0;
+
+    header.classList.add('header-transparent');
+
+    window.addEventListener('scroll', function() {
+      const currentScroll = window.scrollY || document.documentElement.scrollTop;
+  
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        header.classList.remove('header-scrolled');
+        header.classList.add('header-transparent');
+      } else {
+        // Scrolling up
+        header.classList.remove('header-transparent');
+        header.classList.add('header-scrolled');
+      }
+  
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+  });
+  </script>
+  
+
 <!-- Theme Appearance script to manage light/dark modes -->
 <script is:inline>
   const HSThemeAppearance = {
@@ -212,3 +266,5 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
   import "@preline/collapse/index.js";
   import "@preline/overlay/index.js";
 </script>
+
+
