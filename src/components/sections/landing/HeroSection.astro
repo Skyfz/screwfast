@@ -40,11 +40,12 @@ interface Props {
 }
 ---
 <!-- Relative container for video and overlay content -->
-<div class="realtive inset-0 w-screen h-screen overflow-hidden">
+<div class="top-0 inset-0 w-full h-screen overflow-hidden ">
   <!-- Video Background -->
+   <!-- id="myVideo" -->
   <video
     
-    class="absolute top-[-50px] left-0 min-h-full min-w-full object-cover"    
+    class="absolute top-[0px] left-0 min-h-full min-w-full object-cover "    
     draggable="false"
     autoplay
     loop
@@ -56,6 +57,12 @@ interface Props {
 
     Your browser does not support the video tag.
   </video>
+<!-- Overlay -->
+<div class="absolute top-0 left-0 w-full h-full bg-black/30"></div>
+  <!-- <script>
+  const video = document.getElementById('myVideo') as HTMLVideoElement;
+  video.playbackRate = 1.0; // Adjust the speed
+  </script> -->
 
   <!-- Overlay Content: Redefine Banking Section -->
   <section
