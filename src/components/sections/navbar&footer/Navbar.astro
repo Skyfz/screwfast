@@ -107,16 +107,10 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
   .header-transparent {
     background: transparent;
     border-color: transparent;
-    transition: background 1.8s, backdrop-filter 1.5s;
-    backdrop-filter: blur(10px); /* Adjust this to your preference */
+    transition: background 0.8s, backdrop-filter 1.5s;
+    backdrop-filter: blur(10); /* Adjust this to your preference */
   }
-  
-  .dark .header-transparent-d {
-    background: transparent;
-    border-color: transparent;
-    backdrop-filter: blur(0); /* Adjust this to your preference */
-    transition: background 0.3s, backdrop-filter 0.3s;
-  }
+
   /* Style for when scrolled */
   .header-scrolled {
     /* background: rgba(255, 255, 255, 0.6); Adjust this to match your colors */
@@ -139,13 +133,19 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
       const currentScroll = window.scrollY || document.documentElement.scrollTop;
   
       if (currentScroll > lastScrollTop) {
-        // Scrolling down
+        // Scrolling down eg tranparent
         header.classList.remove('header-scrolled');
         header.classList.add('header-transparent');
       } else {
-        // Scrolling up
+        // Scrolling up eg normal theme
         header.classList.remove('header-transparent');
         header.classList.add('header-scrolled');
+      }
+
+      if (currentScroll == 0) {
+        // Scrolling down eg tranparent
+        header.classList.remove('header-scrolled');
+        header.classList.add('header-transparent');
       }
   
       lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling

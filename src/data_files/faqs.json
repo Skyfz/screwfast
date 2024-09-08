@@ -1,29 +1,29 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Have questions about our banking services? We're here to provide answers.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "What are the benefits of your banking services?",
+      "answer": "Our banking services include zero deposit fees, competitive interest rates, and a suite of advanced features designed for modern financial needs. Benefit from comprehensive financial tools, seamless digital banking, and a commitment to providing superior customer service."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "Can I upgrade my banking plan?",
+      "answer": "Yes, upgrading your banking plan is simple. You can opt for additional features such as premium account options, advanced financial management tools, and personalized financial advice. Contact our support team to initiate the upgrade and explore the enhanced benefits."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "What security measures are in place for my account?",
+      "answer": "We employ robust security measures to ensure the protection of your financial data. This includes AES-256 encryption for data at rest, TLS 1.3 encryption for data in transit, and SSH encryption for secure remote access. Our APIs are designed with secure authentication protocols and regular vulnerability assessments. Additionally, we use multi-factor authentication (MFA) to prevent unauthorized access and real-time fraud detection systems to monitor for suspicious activity."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "Are there any fees for transactions or account maintenance?",
+      "answer": "We offer a transparent pricing model with no hidden fees for basic transactions or account maintenance. Our fee structure is designed to be clear and predictable, so you can manage your finances without unexpected costs."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "How often do you update your banking technologies and features?",
+      "answer": "We are dedicated to keeping our banking technologies at the cutting edge. This includes regular updates to our software, integration of new financial tools, and enhancements in user experience. Our technology is continuously improved to incorporate the latest advancements in banking security and functionality."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "Do you offer tailored solutions for businesses?",
+      "answer": "Yes, we provide customized banking solutions for businesses, including bespoke account options, advanced financial analytics, and dedicated account management. Our services are tailored to address the specific needs of your business, such as cash flow management, corporate financing, and integrated financial systems. Contact us for a personalized consultation to learn how we can support your business's financial objectives."
     }
   ]
 }

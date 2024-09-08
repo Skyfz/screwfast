@@ -12,15 +12,15 @@ const footerLinks = [
     section: "Ecosystem",
     links: [
       { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "Products", url: "/products" },
+      { name: "Infrastructure Services", url: "/services" },
     ],
   },
   {
     section: "Company",
     links: [
       { name: "About us", url: "#" },
-      { name: "Blog", url: "/blog" },
+      { name: "News", url: "/blog" },
       { name: "Careers", url: "#" },
       { name: "Customers", url: "#" },
     ],
@@ -30,7 +30,7 @@ const footerLinks = [
 const socialLinks = {
   facebook: "https://www.facebook.com/",
   x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
+  github: "https://github.com/",
   google: "https://www.google.com/",
   slack: "https://slack.com/",
 };
