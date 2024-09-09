@@ -36,61 +36,62 @@ interface Article {
 const articles: Article[] = [
   {
     isRightSection: true,
-    title: "Delivering Expert Guidance",
+    title: "Expert Financial Guidance",
     subTitle:
-      "Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
+      "Navigating the complexities of financial planning can be daunting. With our expert advisors, we guide you through every step, helping you make informed investment choices and optimize your financial strategies. Whether you are a new investor or an experienced trader, our professionals offer tailored advice to meet your needs.",
     single: false,
     imgOne: blueprints,
-    imgOneAlt: "Blueprints and digital tablet with construction plans.",
+    imgOneAlt: "Blueprints and digital tablet with financial plans.",
     imgTwo: personWorking,
-    imgTwoAlt: "Person working in the office",
+    imgTwoAlt: "Financial advisor working with a client",
   },
   {
     isRightSection: false,
-    title: "Transforming Designs into Reality",
+    title: "Turning Investment Plans into Success",
     subTitle:
-      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, ScrewFast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
+      "Our financial experts bring precision and expertise to every investment opportunity. From high-yield savings to dynamic brokerage services, Point Bank offers solutions to turn your financial plans into reality. We adhere to the highest standards of investment practices and utilize advanced tools to ensure your financial success.",
     img: beforeAfter,
-    imgAlt: "Construction site before and after",
+    imgAlt: "Investment portfolio performance before and after",
     btnExists: true,
     btnTitle: "Learn More",
     btnURL: "#",
   },
   {
     isRightSection: true,
-    title: "Navigating Projects with Professional Oversight",
+    title: "Guiding Financial Decisions with Expertise",
     subTitle:
-      "Effective project management is at the heart of any successful build. ScrewFast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
+      "Effective financial management is key to achieving your goals. Point Bank provides comprehensive planning and management services to keep your investments on track and maximize returns. Let us handle the complexities of financial strategy while you focus on your long-term objectives.",
     single: false,
     imgOne: constructionWorkers,
-    imgOneAlt: "Construction workers orchestrating a project",
+    imgOneAlt: "Financial professionals strategizing",
     imgTwo: aerialView,
-    imgTwoAlt: "Aerial view of managed construction",
+    imgTwoAlt: "Overview of financial management",
   },
   {
     isRightSection: false,
-    title: "Ensuring Long-lasting Performance",
+    title: "Ensuring Financial Stability and Growth",
     subTitle:
-      "Our commitment to your project doesn't end at completion. ScrewFast offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
+      "Our commitment to your financial success extends beyond initial investments. Point Bank offers ongoing support and financial management services to ensure your portfolio's growth and stability. From regular reviews to market insights, our team is dedicated to providing exceptional support.",
     img: usingTools,
     imgAlt:
-      "Man in orange and black vest wearing white helmet holding yellow and black power tool",
+      "Financial advisor using advanced tools for portfolio management",
   },
   {
     isRightSection: true,
-    title: "Crafting Bespoke Strategies for Unique Challenges",
+    title: "Creating Tailored Strategies for Unique Financial Needs",
     subTitle:
-      "For our larger enterprise clients, ScrewFast offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
+      "For our larger clients, Point Bank provides customized financial solutions designed to address specific industry challenges. By understanding your unique financial goals, we craft strategies aimed at optimizing your investments, enhancing performance, and driving long-term success.",
     single: false,
     imgOne: progressBuilding,
-    imgOneAlt: "In progress building structure",
+    imgOneAlt: "Financial strategy development in progress",
     imgTwo: underConstruction,
-    imgTwoAlt: "Brown and gray building under construction",
+    imgTwoAlt: "Ongoing financial project under development",
     btnExists: true,
-    btnTitle: "Read more",
+    btnTitle: "Read More",
     btnURL: "#",
   },
 ];
+
 
 const pageTitle: string = `Services | ${SITE.title}`;
 ---
@@ -116,7 +117,7 @@ const pageTitle: string = `Services | ${SITE.title}`;
   <!--MainSection is the introductory section of the page, it also contains a CTA button-->
   <MainSection
     title="Uniting Expertise with Your Vision"
-    subTitle="At ScrewFast, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
+    subTitle="We take pride in providing comprehensive solutions and exceptional service in the finance industry. Our experienced team is dedicated to supporting your goals from inception to completion with a range of specialized services."
     btnExists={true}
     btnTitle="Schedule a Consultation"
     btnURL="#"
@@ -159,23 +160,24 @@ const pageTitle: string = `Services | ${SITE.title}`;
   }
   <!--FeaturesStats section showcases essential stats valuable to users-->
   <FeaturesStats
-    title="By the Numbers"
-    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At ScrewFast, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last."
-    mainStatTitle="96%"
-    mainStatSubTitle="of our clients rate their experience with ScrewFast as exceptional"
-    stats={[
-      {
-        stat: "99.8%",
-        description: "project completion rate",
-      },
-      {
-        stat: "5,000+",
-        description: "successful installations",
-      },
-      {
-        stat: "85%",
-        description: "client growth year-over-year",
-      },
-    ]}
-  />
+  title="By the Numbers"
+  subTitle="Our dedication to financial excellence and client satisfaction is reflected in our performance metrics. At Point Bank, we strive to provide top-tier financial solutions and services that drive success and build trust."
+  mainStatTitle="98%"
+  mainStatSubTitle="of our clients are satisfied with our financial services"
+  stats={[
+    {
+      stat: "99.5%",
+      description: "successful investment returns",
+    },
+    {
+      stat: "10,000+",
+      description: "financial portfolios managed",
+    },
+    {
+      stat: "90%",
+      description: "client retention rate",
+    },
+  ]}
+/>
+
 </MainLayout>
