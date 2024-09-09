@@ -42,9 +42,9 @@ interface Props {
 <!-- Relative container for video and overlay content -->
 <div class="top-0 inset-0 w-full h-screen overflow-hidden ">
   <!-- Video Background -->
-   <!-- id="myVideo" -->
+   
   <video
-    
+    id="myVideo"
     class="absolute top-[0px] left-0 h-full min-h-full min-w-full object-cover "    
     draggable="false"
     autoplay
@@ -53,16 +53,16 @@ interface Props {
     playsinline
   >
     <!-- <source src="./src/images/homepage.webm" type="video/webm" /> -->
-    <source src="homepage.webm" type="video/webm" />
+    <source src="homepage.mp4" type="video/mp4" />
 
     Your browser does not support the video tag.
   </video>
 <!-- Overlay -->
-<div class="absolute top-0 left-0 w-full h-full bg-black/15"></div>
-  <!-- <script>
+<div class="absolute top-0 left-0 w-full h-full bg-black/18"></div>
+  <script>
   const video = document.getElementById('myVideo') as HTMLVideoElement;
-  video.playbackRate = 1.0; // Adjust the speed
-  </script> -->
+  video.playbackRate = 0.75; // Adjust the speed
+  </script>
 
   <!-- Overlay Content: Redefine Banking Section -->
   <section
